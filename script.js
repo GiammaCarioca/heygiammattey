@@ -4,11 +4,6 @@ let pageNumber = 0
 // have the content for these pages
 const pages = [
 	{
-		copy: 'é um late bloomer',
-		background: '#5f8b64',
-		circle: '#ffbfcb'
-	},
-	{
 		copy: 'parla Italiano',
 		background: '#ffbfcb',
 		circle: '#67419e'
