@@ -170,7 +170,6 @@ nav {
 
 nav a {
 	display: inline-block;
-	width: 220px;
 	text-align: center;
 	position: relative;
 	font-family: var(--font-stack-sans-serif);
