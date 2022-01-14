@@ -73,6 +73,21 @@ span {
 	font-size: 1.4vw;
 }
 
+@media (max-width: 860px) {
+	nav {
+		flex-direction: column;
+		column-gap: 12px;
+	}
+
+	nav a {
+		margin-top: 12px;
+	}
+
+	nav a:hover::before {
+		display: none;
+	}
+}
+
 @media (max-width: 784px) {
 	h1.animated-title {
 		font-size: 24px;
@@ -165,7 +180,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding-bottom: 80px;
+	padding: 0 20px 80px;
 }
 
 nav a {
@@ -174,7 +189,7 @@ nav a {
 	position: relative;
 	font-family: var(--font-stack-sans-serif);
 	text-decoration: none;
-	font-size: 24px;
+	font-size: 20px;
 	color: var(--green);
 }
 
@@ -199,14 +214,6 @@ nav a:hover::before {
 }
 
 @media (max-width: 660px) {
-	nav {
-		flex-direction: column;
-	}
-
-	nav a {
-		margin-top: 12px;
-	}
-
 	nav a:hover::before {
 		display: none;
 	}
