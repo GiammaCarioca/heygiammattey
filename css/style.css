@@ -8,6 +8,17 @@
 	src: url(../assets/fonts/bluunext.woff2), url(../assets/fonts/bluunext.woff);
 }
 
+div.alexa {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+div.alexa img {
+	width: 20%;
+	margin: 20px 0;
+}
+
 @keyframes animate-type {
 	0% {
 		font-variation-settings: 'wght' 400, 'slnt' 0;
