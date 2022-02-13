@@ -8,7 +8,7 @@
   src: url(../assets/fonts/bluunext.woff2), url(../assets/fonts/bluunext.woff);
 }
 
-div.alexa {
+/* div.alexa {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,18 +17,7 @@ div.alexa {
 div.alexa img {
   width: 20%;
   margin: 20px 0;
-}
-
-@keyframes animate-type {
-  0% {
-    font-variation-settings: 'wght' 400, 'slnt' 0;
-    letter-spacing: 0em;
-  }
-  100% {
-    font-variation-settings: 'wght' 900, 'slnt' -10;
-    letter-spacing: 0.1em;
-  }
-}
+} */
 
 :root {
   --green: #064234;
@@ -76,6 +65,17 @@ h1.animated-title {
   animation: animate-type 3s infinite alternate;
 }
 
+@keyframes animate-type {
+  0% {
+    font-variation-settings: 'wght' 400, 'slnt' 0;
+    letter-spacing: 0em;
+  }
+  100% {
+    font-variation-settings: 'wght' 900, 'slnt' -10;
+    letter-spacing: 0.1em;
+  }
+}
+
 span {
   font-weight: 200;
   color: #777;
@@ -102,10 +102,6 @@ span {
 @media (max-width: 784px) {
   h1.animated-title {
     font-size: 24px;
-
-    /* font-family: var(--font-stack-serif);
-		font-variation-settings: none;
-		animation: none; */
   }
 
   span {
@@ -129,6 +125,7 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 8vh;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -245,14 +242,14 @@ body.cover {
   color: var(--green);
 }
 
-.footer.cover {
+footer.footer {
   display: flex;
   justify-content: space-between;
   background-color: var(--green);
   padding: 10px;
 }
 
-.footer.cover a {
+footer.footer a {
   color: var(--pink);
 }
 
