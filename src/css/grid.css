@@ -12,7 +12,7 @@
 *:after {
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img,
@@ -25,9 +25,9 @@ img {
   max-width: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .description {
@@ -45,7 +45,7 @@ img {
   z-index: 100;
   opacity: 0;
   -webkit-transform: translate3d(0, -50%, 0);
-          transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
   -webkit-transition: 0.3s 0s;
   transition: 0.3s 0s;
 }
@@ -88,13 +88,24 @@ li:hover .description {
   height: 100%;
   top: 0;
   pointer-events: none;
-  clip-path: polygon(var(--offset) var(--offset), var(--offset) calc(100% - var(--offset)), calc(100% - var(--offset)) calc(100% - var(--offset)), calc(100% - var(--offset)) var(--offset));
-  -webkit-clip-path: polygon(var(--offset) var(--offset), var(--offset) calc(100% - var(--offset)), calc(100% - var(--offset)) calc(100% - var(--offset)), calc(100% - var(--offset)) var(--offset));
+  clip-path: polygon(
+    var(--offset) var(--offset),
+    var(--offset) calc(100% - var(--offset)),
+    calc(100% - var(--offset)) calc(100% - var(--offset)),
+    calc(100% - var(--offset)) var(--offset)
+  );
+  -webkit-clip-path: polygon(
+    var(--offset) var(--offset),
+    var(--offset) calc(100% - var(--offset)),
+    calc(100% - var(--offset)) calc(100% - var(--offset)),
+    calc(100% - var(--offset)) var(--offset)
+  );
   opacity: 0;
   -webkit-transition: opacity 1s, background 1s, -webkit-transform 1s 1s;
   transition: opacity 1s, background 1s, -webkit-transform 1s 1s;
   transition: opacity 1s, transform 1s 1s, background 1s;
-  transition: opacity 1s, transform 1s 1s, background 1s, -webkit-transform 1s 1s;
+  transition: opacity 1s, transform 1s 1s, background 1s,
+    -webkit-transform 1s 1s;
 }
 
 .grid li:last-child:after {
@@ -133,91 +144,91 @@ li:hover .description {
 
 @media (hover: hover) {
   .grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: (50%)[2];
-        grid-template-rows: repeat(2, 50%);
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (50%) [2];
+    grid-template-rows: repeat(2, 50%);
   }
   .grid li:last-child:after,
   .grid li:last-child:before {
     left: 0%;
     -webkit-transform: translate3d(-100%, -50%, 0);
-            transform: translate3d(-100%, -50%, 0);
+    transform: translate3d(-100%, -50%, 0);
   }
   .grid li:nth-child(1):hover ~ li:last-child:after,
   .grid li:nth-child(1):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-200%, -100%, 0);
-            transform: translate3d(-200%, -100%, 0);
+    transform: translate3d(-200%, -100%, 0);
   }
   .grid li:nth-child(2):hover ~ li:last-child:after,
   .grid li:nth-child(2):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-100%, -100%, 0);
-            transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(-100%, -100%, 0);
   }
   .grid li:nth-child(3):hover ~ li:last-child:after,
   .grid li:nth-child(3):hover ~ li:last-child:before {
     -webkit-transform: translate3d(0%, -100%, 0);
-            transform: translate3d(0%, -100%, 0);
+    transform: translate3d(0%, -100%, 0);
   }
   .grid li:nth-child(4):hover ~ li:last-child:after,
   .grid li:nth-child(4):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-200%, 0%, 0);
-            transform: translate3d(-200%, 0%, 0);
+    transform: translate3d(-200%, 0%, 0);
   }
   .grid li:nth-child(5):hover ~ li:last-child:after,
   .grid li:nth-child(5):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-100%, 0%, 0);
-            transform: translate3d(-100%, 0%, 0);
+    transform: translate3d(-100%, 0%, 0);
   }
   .grid li:last-child:hover:after,
   .grid li:last-child:hover:before {
     -webkit-transform: translate3d(0%, 0%, 0);
-            transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
   }
 }
 
 @media (max-width: 1024px) {
   .grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (33.33333%)[3];
-        grid-template-rows: repeat(3, 33.33333%);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (33.33333%) [3];
+    grid-template-rows: repeat(3, 33.33333%);
   }
   .grid li:last-child:after,
   .grid li:last-child:before {
     left: 0%;
     -webkit-transform: translate3d(-50%, -100%, 0);
-            transform: translate3d(-50%, -100%, 0);
+    transform: translate3d(-50%, -100%, 0);
   }
   .grid li:nth-child(1):hover ~ li:last-child:after,
   .grid li:nth-child(1):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-100%, -200%, 0);
-            transform: translate3d(-100%, -200%, 0);
+    transform: translate3d(-100%, -200%, 0);
   }
   .grid li:nth-child(2):hover ~ li:last-child:after,
   .grid li:nth-child(2):hover ~ li:last-child:before {
     -webkit-transform: translate3d(0%, -200%, 0);
-            transform: translate3d(0%, -200%, 0);
+    transform: translate3d(0%, -200%, 0);
   }
   .grid li:nth-child(3):hover ~ li:last-child:after,
   .grid li:nth-child(3):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-100%, -100%, 0);
-            transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(-100%, -100%, 0);
   }
   .grid li:nth-child(4):hover ~ li:last-child:after,
   .grid li:nth-child(4):hover ~ li:last-child:before {
     -webkit-transform: translate3d(0%, -100%, 0);
-            transform: translate3d(0%, -100%, 0);
+    transform: translate3d(0%, -100%, 0);
   }
   .grid li:nth-child(5):hover ~ li:last-child:after,
   .grid li:nth-child(5):hover ~ li:last-child:before {
     -webkit-transform: translate3d(-100%, 0%, 0);
-            transform: translate3d(-100%, 0%, 0);
+    transform: translate3d(-100%, 0%, 0);
   }
   .grid li:last-child:hover:after,
   .grid li:last-child:hover:before {
     -webkit-transform: translate3d(0%, 0%, 0);
-            transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
   }
   :root {
     --offset: 0;
@@ -226,9 +237,9 @@ li:hover .description {
     max-width: 100%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .description {
     opacity: 1;
