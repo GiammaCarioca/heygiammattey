@@ -8,17 +8,6 @@
   src: url(../assets/fonts/bluunext.woff2), url(../assets/fonts/bluunext.woff);
 }
 
-/* div.alexa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-div.alexa img {
-  width: 20%;
-  margin: 20px 0;
-} */
-
 :root {
   --green: #064234;
   --pink: #f3ceee;
@@ -109,12 +98,13 @@ span {
   }
 }
 
-p {
+.cover p {
   line-height: 1.6;
   margin-bottom: 1em;
 }
 
-a {
+a,
+li {
   color: var(--green);
   font-weight: bold;
   text-decoration: none;
@@ -238,10 +228,6 @@ body.cover {
   );
 }
 
-.cover a {
-  color: var(--green);
-}
-
 footer.footer {
   display: flex;
   justify-content: space-between;
@@ -272,10 +258,6 @@ body.academy {
 
 .header.academy {
   padding: 0 20px;
-}
-
-.academy p {
-  margin: 0 0 40px 0;
 }
 
 .academy a {
@@ -353,4 +335,79 @@ section.about .circle {
   border-radius: 70%;
   display: inline-block;
   transition: background-color 0.5s;
+}
+
+footer.about {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px;
+}
+
+footer.footer a {
+  color: var(--pink);
+}
+
+path {
+  fill: var(--pink);
+}
+
+.wrapper.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2.motivation {
+  font-family: var(--font-stack-serif);
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--green);
+  margin: 0.67em 0;
+}
+
+h2.heading {
+  font-family: var(--font-stack-serif);
+  font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+a.styled-link {
+  font-family: var(--font-stack-serif);
+}
+
+.academy p {
+  margin: 0 0 0.4rem 0;
+  padding: 0 20px 0 40px;
+}
+
+h3 {
+  font-family: var(--font-stack-serif);
+  margin: calc(0.67em * 2) 0;
+  padding: 0 20px;
+}
+
+.academy li#last {
+  margin: 0 0 80px 40px;
+}
+
+.academy li.no-circle::after {
+  margin: 0.1em 0;
+}
+
+.academy li.no-circle:hover::after {
+  opacity: 0;
+}
+
+ul {
+  margin: 0 0 80px 0;
+}
+
+iframe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 80px;
 }
