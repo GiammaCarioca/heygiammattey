@@ -1,8 +1,8 @@
 {
   "name": "heygiammattey",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/script.js",
+  "version": "2.0.0",
+  "description": "My personal website",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,13 +11,10 @@
     "url": "git+https://github.com/GiammaCarioca/heygiammattey.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thiago Giammattey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GiammaCarioca/heygiammattey/issues"
   },
-  "homepage": "https://github.com/GiammaCarioca/heygiammattey#readme",
-  "devDependencies": {
-    "prettier": "2.5.1"
-  }
+  "homepage": "https://github.com/GiammaCarioca/heygiammattey#readme"
 }
